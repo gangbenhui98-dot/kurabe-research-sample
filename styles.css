@@ -920,16 +920,26 @@ footer b {
   overflow-wrap: anywhere;
 }
 
-.pr-link {
-  display: inline-flex;
+.official-pr-link {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
   margin-top: 16px;
   padding: 8px 12px;
   border: 1px solid var(--violet);
   border-radius: 4px;
-  color: var(--violet-dark);
   font-size: 12px;
+  line-height: 1.45;
+}
+
+.official-pr-link span {
+  color: var(--violet-dark);
   font-weight: 800;
-  text-decoration: none;
+}
+
+.official-pr-link a {
+  color: var(--ink);
+  font-weight: 650;
 }
 
 .audit-list {
