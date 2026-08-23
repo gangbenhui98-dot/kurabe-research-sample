@@ -1,2 +1,3 @@
 User-agent: *
 Allow: /
+Sitemap: https://gangbenhui98-dot.github.io/kurabe-research-sample/sitemap.xml
