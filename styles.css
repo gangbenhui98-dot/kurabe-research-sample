@@ -452,6 +452,10 @@ a {
   gap: 24px;
 }
 
+.plan-grid.single-plan {
+  grid-template-columns: minmax(0, 620px);
+}
+
 .plan-card {
   position: relative;
   display: flex;
@@ -545,6 +549,68 @@ a {
 .payment-note {
   max-width: 950px;
   margin: 22px 0 0;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.sample-honesty {
+  max-width: 760px;
+  margin: 20px 0 0;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.legal-summary {
+  padding-top: 88px;
+}
+
+.terms-grid {
+  display: grid;
+  margin: 48px 0 0;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  border-top: 2px solid var(--ink);
+}
+
+.terms-grid div {
+  display: grid;
+  padding: 18px 0;
+  grid-template-columns: 150px 1fr;
+  gap: 18px;
+  border-bottom: 1px solid var(--line-dark);
+}
+
+.terms-grid div:nth-child(odd) {
+  padding-right: 28px;
+}
+
+.terms-grid div:nth-child(even) {
+  padding-left: 28px;
+  border-left: 1px solid var(--line-dark);
+}
+
+.terms-grid dt {
+  font-weight: 850;
+}
+
+.terms-grid dd {
+  margin: 0;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.disclosure-request {
+  display: grid;
+  margin-top: 28px;
+  padding: 24px;
+  grid-template-columns: 180px minmax(0, 1fr) auto;
+  gap: 22px;
+  align-items: center;
+  border: 1px solid var(--line-dark);
+  background: var(--white);
+}
+
+.disclosure-request p {
+  margin: 0;
   color: var(--muted);
   font-size: 12px;
 }
@@ -801,6 +867,43 @@ footer b {
   font-size: 11px;
 }
 
+.timely-note {
+  margin-top: 18px;
+  padding: 22px 24px;
+  border: 1px solid var(--line-dark);
+  background: #eceae4;
+}
+
+.timely-note h2 {
+  margin: 7px 0 8px;
+  font-family: var(--display);
+  font-size: clamp(22px, 3vw, 30px);
+  line-height: 1.35;
+}
+
+.timely-note > p:not(.timely-date):not(.timely-source) {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.timely-date {
+  margin: 0;
+  color: var(--coral);
+  font-family: var(--utility);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+.timely-source {
+  display: flex;
+  margin: 12px 0 0;
+  flex-wrap: wrap;
+  gap: 5px 9px;
+  font-size: 11px;
+}
+
 .report-answer {
   margin-top: 36px;
   padding: 30px;
@@ -828,6 +931,42 @@ footer b {
   color: var(--muted);
 }
 
+.answer-actions {
+  display: grid;
+  margin-top: 14px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.answer-actions span {
+  grid-column: 1 / -1;
+  color: var(--coral);
+  font-family: var(--utility);
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.answer-actions a {
+  display: flex;
+  min-height: 48px;
+  padding: 12px 14px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--ink);
+  background: var(--ink);
+  color: var(--white);
+  font-size: 12px;
+  font-weight: 750;
+  line-height: 1.4;
+  text-align: center;
+  text-decoration: none;
+}
+
+.answer-actions a + a {
+  background: transparent;
+  color: var(--ink);
+}
+
 .report-section {
   margin-top: 70px;
 }
@@ -836,6 +975,49 @@ footer b {
   margin: 0 0 22px;
   font-family: var(--display);
   font-size: 31px;
+}
+
+.quantity-heading {
+  display: grid;
+  margin-bottom: 22px;
+  grid-template-columns: minmax(0, 1fr) minmax(240px, 360px);
+  gap: 30px;
+  align-items: end;
+}
+
+.quantity-heading h2 {
+  margin-bottom: 0;
+}
+
+.quantity-heading > p {
+  margin: 0 0 3px;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.quantity-table .focus-row td {
+  background: rgba(95, 75, 216, 0.08);
+  font-weight: 750;
+}
+
+.gap-note {
+  display: grid;
+  padding: 18px 20px;
+  grid-template-columns: 170px 1fr;
+  gap: 18px;
+  border: 1px solid var(--line-dark);
+  border-top: 0;
+  background: var(--white);
+}
+
+.gap-note b {
+  color: var(--violet-dark);
+}
+
+.gap-note p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 12px;
 }
 
 .report-table {
@@ -910,6 +1092,50 @@ footer b {
   padding-left: 18px;
 }
 
+.card-facts {
+  margin: 0 0 15px;
+  border-top: 1px solid var(--line-dark);
+}
+
+.card-facts div {
+  display: grid;
+  padding: 7px 0;
+  grid-template-columns: 78px 1fr;
+  gap: 8px;
+  border-bottom: 1px solid var(--line);
+  font-size: 11px;
+}
+
+.card-facts dt {
+  color: var(--muted);
+}
+
+.card-facts dd {
+  margin: 0;
+  color: var(--ink);
+  font-weight: 750;
+}
+
+.current-signal {
+  margin: -3px 0 14px !important;
+  padding: 9px 10px;
+  border-left: 3px solid var(--coral);
+  background: #f4eee8;
+}
+
+.current-signal a {
+  display: block;
+  color: var(--ink);
+  font-weight: 800;
+}
+
+.current-signal span {
+  display: block;
+  margin-top: 3px;
+  font-family: var(--utility);
+  font-size: 9px;
+}
+
 .report-source-list {
   margin: 0;
   padding-left: 20px;
@@ -974,6 +1200,35 @@ footer b {
   margin-top: 26px;
 }
 
+.research-service-cta {
+  display: grid;
+  margin-top: 70px;
+  padding: 34px 38px;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 34px;
+  align-items: center;
+  background: var(--ink);
+  color: var(--white);
+}
+
+.research-service-cta h2 {
+  margin: 5px 0 8px;
+  font-family: var(--display);
+  font-size: clamp(24px, 3.6vw, 38px);
+  line-height: 1.35;
+}
+
+.research-service-cta p:not(.kicker) {
+  max-width: 760px;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 13px;
+}
+
+.research-service-cta .button {
+  min-width: 170px;
+}
+
 @keyframes circle-in {
   to {
     opacity: 1;
@@ -1005,6 +1260,28 @@ footer b {
   .use-cases,
   .report-card-grid {
     grid-template-columns: 1fr;
+  }
+
+  .quantity-heading,
+  .research-service-cta,
+  .disclosure-request {
+    grid-template-columns: 1fr;
+  }
+
+  .terms-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .terms-grid div:nth-child(odd),
+  .terms-grid div:nth-child(even) {
+    padding-right: 0;
+    padding-left: 0;
+    border-left: 0;
+  }
+
+  .gap-note {
+    grid-template-columns: 1fr;
+    gap: 7px;
   }
 
   .plan-grid,
@@ -1045,6 +1322,10 @@ footer b {
 
   .report-table {
     min-width: 820px;
+  }
+
+  .quantity-table {
+    min-width: 620px;
   }
 }
 
@@ -1087,6 +1368,14 @@ footer b {
     flex: 1 1 150px;
   }
 
+  .answer-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .answer-actions span {
+    grid-column: 1;
+  }
+
   .decision-sheet {
     padding: 23px 18px 27px;
   }
@@ -1123,6 +1412,11 @@ footer b {
     padding-top: 23px;
   }
 
+  .terms-grid div {
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
+
   .price strong {
     font-size: 44px;
   }
@@ -1142,6 +1436,10 @@ footer b {
   .final-cta {
     margin-bottom: 56px;
     padding: 34px 24px;
+  }
+
+  .research-service-cta {
+    padding: 30px 22px;
   }
 
   .final-cta .button {
