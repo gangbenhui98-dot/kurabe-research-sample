@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <meta name="google-site-verification" content="DC_JT9OtznzdcwXBxX5tP7ejILFLYnPpgxCS5X9ggpE">
+  <meta name="msvalidate.01" content="34A344C1FAB7AF780ADB30B27889F18B">
+  <meta name="description" content="非常食12食は何日分かを1〜4人で即答。人数、目標日数、手持ちの食数と水量を入力すると、不足食数・不足水量・2Lボトル本数を無料で計算できます。">
+  <meta name="theme-color" content="#18243b">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:site_name" content="KURABE 調査便">
+  <meta property="og:title" content="非常食12食は何日分？1〜4人の早見表と不足数計算">
+  <meta property="og:description" content="12食は1人4日、2人2日、3人1日＋全員1回、4人1日の主食目安。不足する食数と水量もその場で逆算。">
+  <meta property="og:url" content="https://gangbenhui98-dot.github.io/kurabe-research-sample/calculator.html">
+  <meta property="og:image" content="https://gangbenhui98-dot.github.io/kurabe-research-sample/og-image.jpg">
+  <meta property="og:image:alt" content="非常食の食数と水量を確認するKURABE調査便">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>非常食12食は何日分？1〜4人の早見表と不足数計算</title>
+  <link rel="canonical" href="https://gangbenhui98-dot.github.io/kurabe-research-sample/calculator.html">
+  <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "name": "非常食12食は何日分？1〜4人の早見表と不足数計算",
+        "url": "https://gangbenhui98-dot.github.io/kurabe-research-sample/calculator.html",
+        "description": "人数、目標日数、手持ちの食数と水量から、非常食と水の不足量を計算します。",
+        "datePublished": "2026-08-24",
+        "dateModified": "2026-08-24",
+        "inLanguage": "ja-JP",
+        "isAccessibleForFree": true
+      },
+      {
+        "@type": "WebApplication",
+        "name": "KURABE 非常食・水の不足量計算",
+        "url": "https://gangbenhui98-dot.github.io/kurabe-research-sample/calculator.html",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "Any",
+        "browserRequirements": "JavaScript",
+        "isAccessibleForFree": true,
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "JPY" },
+        "citation": [
+          "https://www.gov-online.go.jp/tokusyu/bousai/preparation.html",
+          "https://www.maff.go.jp/j/zyukyu/foodstock/chapter05.html"
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "非常食12食は1人で何日分ですか？",
+            "acceptedAnswer": { "@type": "Answer", "text": "1日3食で単純計算すると4日分です。ただし主食12回分であり、水、副菜、栄養、熱源は別に確認します。" }
+          },
+          {
+            "@type": "Question",
+            "name": "非常食12食は2人で何日分ですか？",
+            "acceptedAnswer": { "@type": "Answer", "text": "2人が1日3食食べる前提では2日分です。3日分には18食、7日分には42食が目安です。" }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+  <script src="calculator.js" defer></script>
+</head>
+<body class="calc-page">
+  <a class="skip-link" href="#main">本文へ移動</a>
+
+  <header class="calc-site-header" aria-label="サイトヘッダー">
+    <a class="calc-wordmark" href="index.html" aria-label="KURABE 調査便の非常食比較へ">
+      <span>KURABE</span><small>備蓄メモ</small>
+    </a>
+    <nav aria-label="関連ページ">
+      <a href="index.html">3商品を比較</a>
+      <a href="service.html">比較を相談</a>
+    </nav>
+  </header>
+
+  <main id="main" class="calc-shell">
+    <section class="calc-hero" aria-labelledby="calc-title">
+      <div class="ration-stamp" aria-hidden="true">
+        <small>STOCK</small>
+        <strong>12</strong>
+        <span>MEALS</span>
+      </div>
+      <div>
+        <p class="calc-kicker">非常食の手持ちから逆算</p>
+        <h1 id="calc-title">12食は何日もつ？<br>人数別の日数・不足食数を計算</h1>
+        <p class="calc-lead"><strong>1日3食の単純計算なら、1人4日、2人2日、3人1日＋全員1回、4人1日。</strong>ただし「主食12回分」であって、完全な食事や水まで12回分そろう意味ではありません。</p>
+        <div class="calc-proofline" aria-label="計算基準">
+          <span>食料：1人1日3食</span>
+          <span>飲用・調理用水：1人1日3L</span>
+          <span>最低3日、できれば1週間</span>
+        </div>
+      </div>
+    </section>
+
+    <aside class="affiliate-notice calc-pr-notice">
+      <strong>【PR】楽天アフィリエイトを利用しています。</strong>
+      <p>商品リンクから購入されると運営者に報酬が入る場合があります。計算結果や掲載順は報酬で変えていません。価格・在庫・内容は購入前に商品ページで再確認してください。</p>
+    </aside>
+
+    <section class="stock-calculator" aria-labelledby="tool-title">
+      <div class="stock-calculator-heading">
+        <div>
+          <p class="calc-kicker">無料・入力は端末内だけ</p>
+          <h2 id="tool-title">手持ちを引いて、不足だけ出す</h2>
+        </div>
+        <p>入力内容は保存・送信しません。食数は「主食または1食として数えられる量」で入力し、水や食器などの品数は含めません。</p>
+      </div>
+
+      <form id="stock-calculator-form" class="stock-calculator-grid">
+        <div class="stock-inputs">
+          <label class="stock-field" for="people">
+            <span><b>01</b> 人数</span>
+            <span class="stock-number"><input id="people" name="people" type="number" min="1" max="20" step="1" value="1" inputmode="numeric" aria-describedby="people-help" required><em>人</em></span>
+            <small id="people-help">1〜20人</small>
+          </label>
+
+          <fieldset class="stock-field stock-days">
+            <legend><b>02</b> 目標日数</legend>
+            <div>
+              <label><input id="days-3" name="days" type="radio" value="3"><span>まず3日</span></label>
+              <label><input id="days-7" name="days" type="radio" value="7" checked><span>目標7日</span></label>
+            </div>
+          </fieldset>
+
+          <label class="stock-field" for="current-meals">
+            <span><b>03</b> 今ある食数</span>
+            <span class="stock-number"><input id="current-meals" name="currentMeals" type="number" min="0" max="999" step="1" value="12" inputmode="numeric" aria-describedby="meals-help" required><em>食</em></span>
+            <small id="meals-help">品数ではなく、食事として数えられる回数</small>
+          </label>
+
+          <label class="stock-field" for="current-water">
+            <span><b>04</b> 今ある飲用・調理用水</span>
+            <span class="stock-number"><input id="current-water" name="currentWater" type="number" min="0" max="999" step="0.1" value="0" inputmode="decimal" aria-describedby="water-help" required><em>L</em></span>
+            <small id="water-help">生活用水は別。500mlなら0.5と入力</small>
+          </label>
+
+          <div class="stock-form-actions">
+            <button class="stock-calculate" type="submit">不足量を計算</button>
+            <button class="stock-reset" type="reset">初期値に戻す</button>
+          </div>
+          <p class="stock-error" id="stock-error" role="alert" hidden></p>
+        </div>
+
+        <div class="stock-results" aria-labelledby="result-title">
+          <p class="result-label">CALCULATION / 1日3食・3L</p>
+          <h3 id="result-title">あなたの不足量</h3>
+          <output id="stock-summary" for="people days-3 days-7 current-meals current-water" aria-live="polite">
+            <span data-summary>1人・7日には21食と21L。手持ちを引くと9食と21L不足します。</span>
+          </output>
+
+          <div class="result-ledger">
+            <div>
+              <span>必要な食数</span>
+              <strong><span data-result="requiredMeals">21</span><small>食</small></strong>
+              <code><span data-result="people">1</span>人 × <span data-result="days">7</span>日 × 3食</code>
+            </div>
+            <div class="shortage-row">
+              <span>不足する食数</span>
+              <strong><span data-result="shortMeals">9</span><small>食</small></strong>
+              <code>必要 − 手持ち<span data-result="currentMeals">12</span>食</code>
+            </div>
+            <div>
+              <span>必要な水</span>
+              <strong><span data-result="requiredWater">21</span><small>L</small></strong>
+              <code><span data-result="people">1</span>人 × <span data-result="days">7</span>日 × 3L</code>
+            </div>
+            <div class="shortage-row">
+              <span>不足する水</span>
+              <strong><span data-result="shortWater">21</span><small>L</small></strong>
+              <code>2Lボトルなら <span data-result="bottles">11</span>本</code>
+            </div>
+          </div>
+
+          <div class="coverage-note">
+            <b>今ある量だけなら</b>
+            <p>食事は約<span data-result="mealDays">4</span>日分、水は約<span data-result="waterDays">0</span>日分です。両方そろって初めて同じ日数をまかなえます。</p>
+          </div>
+          <noscript><p class="stock-error">計算機にはJavaScriptが必要です。下の12食早見表はそのまま確認できます。</p></noscript>
+        </div>
+      </form>
+
+      <div class="result-routes" aria-labelledby="routes-title">
+        <div class="result-route-heading">
+          <p class="calc-kicker">不足が分かった次</p>
+          <h3 id="routes-title">定型なら自分で補充。条件が多ければ相談。</h3>
+          <p>以下は不足を完全に満たす保証ではなく、内訳を確認するための候補です。水・副菜・アレルギー・期限・保管場所は別に確認してください。</p>
+        </div>
+        <div class="result-route-grid">
+          <article>
+            <span class="route-number">A / 主食を足す</span>
+            <h4>低予算で主食12回分から</h4>
+            <p>尾西食品のアルファ米12袋。確認価格5,076円。水と副菜は別です。</p>
+            <div class="official-pr-link calc-pr-link">
+              <span>【PR】内容・現在価格を確認</span>
+              <a href="https://hb.afl.rakuten.co.jp/ichiba/56c95086.3df38bd8.56c95087.baa4cc4c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbousaikan%2F477126%2F&amp;link_type=text&amp;ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJ0ZXh0Iiwic2l6ZSI6IjI0MHgyNDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9" target="_blank" rel="nofollow sponsored noopener">尾西食品 アルファ米12種類セット（楽天市場）</a>
+            </div>
+          </article>
+          <article>
+            <span class="route-number">B / 種類をまとめる</span>
+            <h4>1人7日を幅広くそろえる候補</h4>
+            <p>LA・PITAの55品セット。確認価格17,880円。水3.5Lのため追加水が必要です。</p>
+            <div class="official-pr-link calc-pr-link">
+              <span>【PR】内容・現在価格を確認</span>
+              <a href="https://hb.afl.rakuten.co.jp/ichiba/56c954c4.e644c7ee.56c954c5.0a4de56a/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fat-rescue%2F10002656%2F&amp;link_type=text&amp;ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJ0ZXh0Iiwic2l6ZSI6IjI0MHgyNDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9" target="_blank" rel="nofollow sponsored noopener">LA・PITA 非常食7日分55品セット（楽天市場）</a>
+            </div>
+          </article>
+          <article class="route-service">
+            <span class="route-number">C / 条件ごと比べる</span>
+            <h4>家族構成・予算まで含めて相談</h4>
+            <p>相談無料。この時点では申込み・支払いになりません。依頼確定なら税込1,000円、条件確定と入金から24時間以内です。</p>
+            <a class="button button-coral" id="consultation-link" href="mailto:kurabe.support@gmail.com?subject=KURABE%20調査便｜備蓄計算から比較ミニ便の相談">計算結果ごとメールで相談</a>
+            <a class="route-service-detail" href="service.html">料金・取引条件を見る</a>
+            <small>メールが開かない場合：kurabe.support@gmail.com</small>
+          </article>
+        </div>
+        <p class="price-note">価格・内容は2026年8月24日確認。購入時点の表示を優先してください。<a href="index.html">3商品の詳しい比較と出典を見る</a></p>
+      </div>
+    </section>
+
+    <section class="calc-section" aria-labelledby="quick-title">
+      <div class="calc-section-heading">
+        <p class="calc-kicker">12食の即答</p>
+        <h2 id="quick-title">人数が増えると、こう減る</h2>
+        <p>1人1日3食で割った主食回数の目安です。</p>
+      </div>
+      <div class="ration-table-wrap" tabindex="0" aria-label="12食が何日分かの人数別早見表">
+        <table class="ration-table">
+          <thead><tr><th>人数</th><th>1日に必要</th><th>12食でまかなう目安</th><th>3日目標まで</th></tr></thead>
+          <tbody>
+            <tr><td>1人</td><td>3食</td><td><strong>4日</strong></td><td class="enough">3食余る</td></tr>
+            <tr><td>2人</td><td>6食</td><td><strong>2日</strong></td><td class="lack">6食不足</td></tr>
+            <tr><td>3人</td><td>9食</td><td><strong>1日＋全員1回</strong></td><td class="lack">15食不足</td></tr>
+            <tr><td>4人</td><td>12食</td><td><strong>1日</strong></td><td class="lack">24食不足</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="calc-caption">座間市の備蓄例も、1人分を「9食（3日分）＋3食（4日目分）＝12食」としています。これは数量の例で、必要な種類や量は個人差があります。</p>
+    </section>
+
+    <section class="calc-section calc-explainer" aria-labelledby="count-title">
+      <div class="calc-section-heading">
+        <p class="calc-kicker">数え間違いを防ぐ</p>
+        <h2 id="count-title">「12食」と「12品」は同じではない</h2>
+      </div>
+      <div class="count-grid">
+        <article>
+          <span>食</span>
+          <h3>食事として数える単位</h3>
+          <p>主食1袋など、1人が1回に食べる単位。量が少ない菓子や調味料は、そのまま1食にしません。</p>
+        </article>
+        <article>
+          <span>品・点</span>
+          <h3>箱に入った物の数</h3>
+          <p>水、食器、加熱材も含み得ます。「54品」を「54食」として計算しないでください。</p>
+        </article>
+        <article>
+          <span>水・熱</span>
+          <h3>調理条件も在庫にする</h3>
+          <p>アルファ米は商品ごとの注水量・待ち時間を優先。飲用・調理用水とは別に、生活用水も備えます。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="calc-section calc-safety" aria-labelledby="safety-title">
+      <div class="calc-section-heading">
+        <p class="calc-kicker">計算結果の限界</p>
+        <h2 id="safety-title">数字が足りても、備蓄完了とは限らない</h2>
+      </div>
+      <ul>
+        <li><b>水：</b>1人1日3Lは飲用・調理用の目安。トイレや手洗いなどの生活用水は別です。</li>
+        <li><b>体調：</b>乳幼児、高齢者、妊娠中、持病、服薬、アレルギーがある場合は個別に調整します。</li>
+        <li><b>栄養：</b>主食だけで必要な栄養を満たすとは限りません。たんぱく源、野菜、塩分も確認します。</li>
+        <li><b>保管：</b>賞味期限、温度、箱の大きさを確認し、普段食べながら補充するローリングストックを使います。</li>
+      </ul>
+    </section>
+
+    <section class="calc-section source-section" aria-labelledby="calc-sources-title">
+      <div class="calc-section-heading">
+        <p class="calc-kicker">一次資料</p>
+        <h2 id="calc-sources-title">計算基準と確認元</h2>
+      </div>
+      <ol class="report-source-list">
+        <li><a href="https://www.gov-online.go.jp/tokusyu/bousai/preparation.html" rel="noopener" target="_blank">政府広報オンライン — 災害に備えるために</a>（飲用・調理用水1人1日3L、食料1人1日3食）</li>
+        <li><a href="https://www.bousai.go.jp/kyoiku/week/r8bousaiweek.html" rel="noopener" target="_blank">内閣府 — 令和8年度「防災週間」</a>（最低3日、できれば1週間分の備蓄）</li>
+        <li><a href="https://www.maff.go.jp/j/zyukyu/foodstock/chapter05.html" rel="noopener" target="_blank">農林水産省 — 家庭備蓄ポータル 第5章</a>（飲料・調理用水と生活用水の区別）</li>
+        <li><a href="https://www.city.zama.kanagawa.jp/kurashi/bousai/guide/1001668.html" rel="noopener" target="_blank">座間市 — ローリングストックについて</a>（1人分12食を4日分とする例）</li>
+        <li><a href="https://www.onisifoods.co.jp/products/pdf/kikaku_01.php" rel="noopener" target="_blank">尾西食品 — アルファ米製品規格</a>（商品ごとの注水量・調理時間）</li>
+      </ol>
+      <p class="source-note">これは公的な目安を掛け算した簡易計算です。災害時の安全や健康を保証するものではありません。</p>
+    </section>
+  </main>
+
+  <footer class="calc-footer">
+    <p><b>KURABE 調査便</b> — 公開情報を同じ軸にそろえ、選ぶ材料を短く返します。</p>
+    <p><a href="index.html">非常食3商品の比較</a> / <a href="service.html">比較ミニ便</a></p>
+  </footer>
+</body>
+</html>

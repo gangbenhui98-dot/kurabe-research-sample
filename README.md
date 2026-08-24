@@ -13,6 +13,12 @@
 
 商品情報と公的資料を2026年8月24日に確認しています。実使用レビューではありません。公開ページには楽天アフィリエイトの広告リンクが含まれます。
 
+## 不足量を計算する
+
+[非常食12食は何日分か、不足する食数と水量を計算](https://gangbenhui98-dot.github.io/kurabe-research-sample/calculator.html)
+
+人数、3日／7日の目標、手持ち食数、飲用・調理用水を入力すると、公的な「1人1日3食・3L」の目安から不足量を端末内だけで計算します。結果から主食12食、7日分セット、比較ミニ便へ分岐できます。
+
 ## 比較を依頼する
 
 [KURABE 調査便の比較ミニ便](https://gangbenhui98-dot.github.io/kurabe-research-sample/service.html)
