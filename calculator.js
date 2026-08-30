@@ -61,7 +61,6 @@
 
   const error = document.querySelector("#stock-error");
   const summary = document.querySelector("[data-summary]");
-  const consultationLink = document.querySelector("#consultation-link");
 
   const format = (value) => new Intl.NumberFormat("ja-JP", { maximumFractionDigits: 1 }).format(value);
 
@@ -85,20 +84,6 @@
       const waterStatus = result.shortWater > 0 ? `${format(result.shortWater)}L不足` : "水量は目安を満たします";
       summary.textContent = `${result.people}人・${result.days}日には${result.requiredMeals}食と${result.requiredWater}L。手持ちを引くと、${mealStatus}、${waterStatus}です。`;
 
-      const subject = "KURABE 調査便｜備蓄計算から比較ミニ便の相談";
-      const body = [
-        "計算結果をもとに、非常食の候補比較を相談します。",
-        "",
-        `人数：${result.people}人`,
-        `目標：${result.days}日`,
-        `手持ち：${result.currentMeals}食・${format(result.currentWater)}L`,
-        `不足目安：${result.shortMeals}食・${format(result.shortWater)}L`,
-        "予算：",
-        "アレルギー・外せない条件：",
-        "",
-        "これは相談であり、完全な取引条件の提示と双方の合意までは申込みになりません。",
-      ].join("\n");
-      consultationLink.href = `mailto:kurabe.support@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
       error.hidden = true;
       error.textContent = "";
     } catch (renderError) {
